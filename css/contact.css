@@ -1,0 +1,245 @@
+/*-------------------------------  Start Variables ------------------------------- */
+:root {
+  --navBg-color: #1e202b;
+  --buttonBg-color: #009ad8;
+  --dayOneBg-color: #323544;
+  --titleBgDayOne-color: #2d303d;
+  --dayTwoBg-color: #262936;
+  --titleBgDayTwo-color: #222530;
+  --white-color: #fff;
+  --footer-color:#262936;
+}
+
+/*-------------------------------  End Variables ------------------------------- */
+/*-------------------------------  Start Global Rules ------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 40px;
+}
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+}
+
+/*-------------------------------  End Global Rules ------------------------------- */
+
+/*-------------------------------  Start Navbar ------------------------------- */
+figure {
+  margin-right: -50px;
+}
+.navbar-expand-lg {
+  background-color: var(--navBg-color);
+  padding-block: 25px;
+}
+.title p {
+  font-size: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-item a {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 25px;
+  border: transparent solid 2px;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+  margin-inline: 5px;
+}
+.navbar-expand-lg .navbar-nav .nav-item a:hover {
+  border-color: var(--buttonBg-color);
+  color: var(--buttonBg-color);
+}
+.navbar-nav .nav-link.active.active {
+  border-color: var(--buttonBg-color);
+  color: var(--buttonBg-color);
+}
+.navbar-toggler-icon {
+  color: var(--white-color) !important;
+}
+/*-------------------------------  End Navbar  ------------------------------- */
+/*-------------------------------  Start Header  ------------------------------- */
+main {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-color: var(--navBg-color);
+  padding-bottom: 80px;
+}
+form #search {
+  padding-block: 15px;
+  padding-left: 10px;
+  font-size: 15px;
+  width: 85%;
+  border-radius: 30px;
+  background-color: var(--navBg-color);
+  border: var(--navBg-color) 1px solid;
+  color: var(--white-color);
+}
+header form #submit {
+  position: absolute;
+  right: 7.9%;
+  left: 78.6%;
+  bottom: 53px;
+  background-color: var(--buttonBg-color);
+  border: var(--buttonBg-color) 1px solid;
+  color: var(--white-color);
+  padding-block: 10px;
+  padding-inline: 25px;
+  border-radius: 30px;
+  text-align: center;
+}
+footer form #submit {
+  position: absolute;
+  right: 9.2%;
+  left: 77.6%;
+  bottom: 53px;
+  background-color: var(--buttonBg-color);
+  border: var(--buttonBg-color) 1px solid;
+  color: var(--white-color);
+  padding-block: 10px;
+  padding-inline: 25px;
+  border-radius: 30px;
+  text-align: center;
+}
+.forecast {
+  height: 300px !important;
+}
+main header .cloudy,
+main header .rain {
+  background-color: var(--titleBgDayOne-color);
+  color: var(--white-color);
+}
+main header .cloudy {
+  border-top-left-radius: 10px;
+}
+main header .rain {
+  border-top-right-radius: 10px;
+}
+main header .sunny {
+  color: var(--white-color);
+  background-color: var(--titleBgDayTwo-color);
+}
+main header .row {
+  width: 85%;
+}
+main header .forecast-content {
+  background-color: var(--dayOneBg-color);
+  color: var(--white-color);
+  border-bottom-left-radius: 10px;
+}
+main header .forecast-content .location {
+  opacity: 0.8;
+}
+
+main header .forecast-content .degree {
+  font-size: 5rem;
+  font-weight: 500;
+}
+main header .forecast-content3 .custom {
+  min-height: 100px !important;
+}
+main header .forecast-content3 .custom,
+main header .forecast-content2 .custom,
+main header .forecast-content .custom {
+  color: var(--buttonBg-color);
+}
+main header .forecast-content .icon figure {
+  height: 20px;
+  vertical-align: middle;
+}
+main header .forecast-content .icon .compass,
+main header .forecast-content .icon .wind,
+main header .forecast-content .icon .umberella {
+  margin-right: 20px;
+}
+main header .forecast-content3 {
+  background-color: var(--dayOneBg-color);
+  border-bottom-right-radius: 10px;
+}
+main header .forecast-content2 {
+  background-color: var(--dayTwoBg-color);
+}
+main header .forecast-content3 figure,
+main header .forecast-content2 figure {
+  width: 65px;
+  margin-right: 20px !important;
+}
+main header .forecast-content3 .degree,
+main header .forecast-content2 .degree {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 10px;
+}
+main header .forecast-content3 .degree2,
+main header .forecast-content2 .degree2 {
+  color: var(--white-color);
+  opacity: 0.8;
+  text-align: center;
+  margin-left: 20px;
+
+}
+/*-------------------------------  End Header  ------------------------------- */
+/*-------------------------------  Start Footer  ------------------------------- */
+footer{
+  background-color: var(--footer-color);
+  padding-bottom: 20px;
+}
+footer ul li {
+color: var(--buttonBg-color);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-left: 7px;
+background-color: var(--navBg-color);
+display: grid;
+place-items: center;
+transition: all 1s;
+}
+footer ul li:hover{
+  background-color: var(--buttonBg-color);
+  color: var(--white-color);
+}
+/*-------------------------------  End Footer  ------------------------------- */
+@media (max-width: 994px) {
+  main header .forecast-content3 {
+    border-bottom-left-radius: 10px;
+  }
+  main header .forecast-content {
+    border-bottom-left-radius: 0px;
+  }
+  main header .cloudy {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  main header .rain {
+    border-top-right-radius: 0px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-item a:hover {
+    border-color: transparent;
+  }
+  .navbar-nav .nav-link.active.active {
+    border-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+
+  
+}

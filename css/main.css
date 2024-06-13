@@ -1,0 +1,16 @@
+
+.social ul li {
+  text-decoration: none;
+  display: inline;
+  padding-inline: 10px;
+}
+
+.social ul {
+ padding: 0;
+ margin: 0;
+}
+
+footer {
+  margin-top: 3em;
+}
+
