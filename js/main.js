@@ -77,7 +77,7 @@ function display(userData) {
                             </div>
                             <div class="day text ">${dayData.day.condition.text}</div>
                         </div>
-                        <div class="card-footer text-muted d-flex justify-content-between">
+                        <div class="card-footer  d-flex justify-content-between">
                             <div class="day px-2"><i class="fa-solid fa-umbrella"></i> ${dayData.day.daily_chance_of_rain}%</div>
                             <div class="day px-2"><i class="fa-solid fa-wind"></i> ${dayData.day.maxwind_kph} km/h</div>
                             <div class="day px-2 "><i class="fa-regular fa-compass"></i> East </div>
@@ -101,7 +101,7 @@ function display(userData) {
                             </div>
                             <div class="day text">${dayData.day.condition.text}</div>
                         </div>
-                        <div class="card-footer text-muted d-flex justify-content-between">
+                        <div class="card-footer  d-flex justify-content-between">
                             <div class="day px-2"><i class="fa-solid fa-umbrella"></i> ${dayData.day.daily_chance_of_rain}%</div>
                             <div class="day px-2"><i class="fa-solid fa-wind"></i> ${dayData.day.maxwind_kph} km/h</div>
                             <div class="day px-2"><i class="fa-regular fa-compass"></i> East </div>

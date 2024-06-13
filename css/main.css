@@ -1,16 +1,27 @@
 
-.social ul li {
-  text-decoration: none;
-  display: inline;
-  padding-inline: 10px;
+* {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.social ul {
- padding: 0;
- margin: 0;
+.main {
+  background: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20%;
 }
 
-footer {
-  margin-top: 3em;
+
+.card {
+  background-color: rgba(124, 120, 120, 0.4);
+
+
+
+  box-shadow: 0 24px 64px #000;
+  color: aliceblue;
 }
+
+
 
